@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   html {
     font-family: 'SF Pro Display', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -29,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
 
   body{
     width: 100vw;
+    height: 100%;
     background: var(--background);
     color: var(--dark);
     overflow: hidden;
