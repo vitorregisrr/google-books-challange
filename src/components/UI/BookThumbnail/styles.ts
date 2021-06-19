@@ -20,7 +20,7 @@ export const BookThumbnailWrapper = styled.div`
 
 export const BookThumbnailImg = styled.img`
   width: 100%;
-  height: 150px;
+  height: 40vw;
   border-radius: 5px;
   object-fit: cover;
   object-position: center center;
