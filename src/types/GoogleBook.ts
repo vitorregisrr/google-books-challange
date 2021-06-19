@@ -1,10 +1,11 @@
-export type BookType = {
+export type GoogleBook = {
   kind: string
   id: string
   etag: string
   selfLink: string
   volumeInfo: {
     title: string
+    imageLinks?: any
     authors: string[]
     publishedDate: string
     description: string

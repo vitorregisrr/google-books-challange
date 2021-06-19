@@ -5,8 +5,9 @@ const userContext = createContext({
     fullName: `Mehmed Al Fatih`,
     activiteData: {
       currentReading: {
-        id: 1
-      }
+        id: 'Cy86CQAAQBAJ'
+      },
+      discoverBooks: [{ id: 'dsz5AwAAQBAJ' }, { id: '94ScMQEACAAJ' }]
     }
   }
 })

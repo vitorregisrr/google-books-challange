@@ -1,3 +1,13 @@
-const Main = ({ title = 'Google Books Challange' }) => <h1>{title}</h1>
+import Search from 'components/Search'
+
+import * as S from './styles'
+
+const Main = () => {
+  return (
+    <S.MainWrapper>
+      <Search />
+    </S.MainWrapper>
+  )
+}
 
 export default Main

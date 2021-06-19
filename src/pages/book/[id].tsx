@@ -1,8 +1,8 @@
 import { GetServerSideProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
 import BookTemplate, { BookTemplateProps } from 'templates/Book'
-import { findBookById } from 'services/books'
-import { BookType } from 'types/book'
+import { getBookById } from 'services/google-books'
+import { GoogleBook } from 'types/GoogleBook'
 
 export default function Book({ book }: BookTemplateProps) {
   const router = useRouter()
@@ -15,7 +15,7 @@ export default function Book({ book }: BookTemplateProps) {
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   // @ts-ignore
-  const book: BookType = await findBookById(params.id)
+  const book: GoogleBook = await getBookById(params.id)
 
   if (!book) return { notFound: true }
 

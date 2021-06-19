@@ -1,7 +1,7 @@
 import { useRouter } from 'next/dist/client/router'
 
 // @ts-ignore
-import { BookType } from 'types/book'
+import { BookType } from 'types/GoogleBook'
 
 export type BookTemplateProps = {
   book: BookType
@@ -15,5 +15,16 @@ export default function BooksTemplate({ book }: BookTemplateProps) {
 
   console.log(book)
 
-  return <>{book.volumeInfo.title}</>
+  return (
+    <>
+      <img
+        src={
+          book.volumeInfo.imageLinks
+            ? book.volumeInfo.imageLinks.thumbnail
+            : '/img/book-thumbnail.png'
+        }
+      />
+      {book.volumeInfo.title}
+    </>
+  )
 }
