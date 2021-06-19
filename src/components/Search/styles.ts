@@ -54,8 +54,7 @@ export const SearchContentWrapper = styled.div`
   top: 50%;
   left: 50%;
   width: 100vw;
-  min-height: 100vh;
-  height: -webkit-fill-available;
+  height: 100%;
   transform: translate(-50%, -50%);
   z-index: 1000;
 
