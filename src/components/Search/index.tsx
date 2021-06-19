@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { getBooksByQuery } from 'services/google-books'
 import { GoogleBook } from 'types/GoogleBook'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -36,6 +36,11 @@ const Search = () => {
     setCurrBooks([])
   }
 
+  // called on search input onChange
+  const inputChangeHandler = (e) => {
+    setSearchValue(e.target.value)
+  }
+
   const searchBooks = async () => {
     // using signal AbortController signal
     if (controllerRef.current) {
@@ -67,24 +72,6 @@ const Search = () => {
     }
   }
 
-  // called on search input onChange
-  const inputChangeHandler = (e) => {
-    setSearchValue(e.target.value)
-    if (e.target.value !== '') {
-      searchBooks()
-    } else {
-      if (controllerRef.current) {
-        controllerRef.current.abort()
-      }
-      setPagination({
-        start: 0,
-        max: 9,
-        totalItems: 0
-      })
-      setCurrBooks([])
-    }
-  }
-
   // called on load more button onClick
   const loadMore = async () => {
     if (!isFetching) {
@@ -102,6 +89,25 @@ const Search = () => {
       setIsFetching(false)
     }
   }
+
+  // called on every input change
+  useEffect(() => {
+    if (searchValue !== '') {
+      searchBooks()
+    } else {
+      if (controllerRef.current) {
+        controllerRef.current.abort()
+      }
+      setPagination({
+        start: 0,
+        max: 9,
+        totalItems: 0
+      })
+      setCurrBooks([])
+    }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchValue])
 
   const isLoadMoreBtnVisible = () =>
     pagination.start < pagination.totalItems - (pagination.max + 1)
