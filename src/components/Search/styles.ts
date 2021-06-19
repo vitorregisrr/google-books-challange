@@ -59,7 +59,7 @@ export const SearchContentWrapper = styled.div`
   z-index: 1000;
 
   @media screen and (min-width: 778px) {
-    padding-top: 122px;
+    padding-top: 136px;
   }
 
   .simplebar-offset {
@@ -94,7 +94,7 @@ export const SearchContentBody = styled.div`
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 122px;
+  padding-top: 136px;
 
   @media screen and (min-width: 778px) {
     padding-top: 15px;

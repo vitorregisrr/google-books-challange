@@ -24,7 +24,7 @@ export const BookThumbnailImg = styled.img`
   border-radius: 5px;
   object-fit: cover;
   object-position: center center;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.03);
 
   @media screen and (min-width: 768px) {
     height: 250px;
