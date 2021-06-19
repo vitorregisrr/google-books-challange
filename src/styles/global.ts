@@ -23,13 +23,14 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'SF Pro Display', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 62.5%;
+    height: -webkit-fill-available;
   }
-  html, body, #__next {
-    height: 100vh;
+
+  body{
     width: 100vw;
-    overflow: hidden;
     background: var(--background);
     color: var(--dark);
+    overflow: hidden;
   }
 
   @keyframes fadeIn{
