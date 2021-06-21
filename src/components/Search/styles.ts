@@ -148,7 +148,7 @@ export const LoadMoreWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 100px;
@@ -167,7 +167,7 @@ export const LoadMoreButton = styled.button`
   background-color: var(--highlight);
   padding: 6px 15px;
   margin-bottom: 12px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);

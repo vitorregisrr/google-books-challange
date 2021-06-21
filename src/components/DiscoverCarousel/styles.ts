@@ -4,6 +4,7 @@ export const DiscoverCarouselWrapper = styled.section`
   width: 100%;
   position: relative;
   z-index: 4;
+  margin-bottom: -7px;
 
   &::after {
     content: '';

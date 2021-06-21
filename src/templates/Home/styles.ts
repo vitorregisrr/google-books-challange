@@ -7,10 +7,10 @@ export const HomeWrapper = styled.main`
   overflow-x: hidden;
   background-color: var(--background);
   padding-top: 130px;
-  padding-bottom: 190px;
+  padding-bottom: 100px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 120px;
+    padding-bottom: 110px;
   }
 `
 
