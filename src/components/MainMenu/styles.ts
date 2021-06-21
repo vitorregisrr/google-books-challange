@@ -7,6 +7,7 @@ export const MainMenuWrapper = styled.nav`
   background-color: #fff;
   height: 59px;
   width: 100%;
+  z-index: 1500;
 
   .container {
     height: 100%;

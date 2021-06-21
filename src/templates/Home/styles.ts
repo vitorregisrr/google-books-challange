@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 export const HomeWrapper = styled.main`
-  width: 100%;
+  position: relative;
+  width: 100vw;
   height: 100vh;
+  overflow-y: auto;
   background-color: var(--background);
   padding-top: 130px;
+  padding-bottom: 120px;
 `
 
 export const HomeTitle = styled.h1`
