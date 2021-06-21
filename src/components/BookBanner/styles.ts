@@ -9,8 +9,10 @@ export const BookBannerContent = styled.div`
   cursor: pointer;
   transition: transform 0.3s;
 
-  &:hover {
-    transform: translateX(10px);
+  @media screen and (min-width: 768px) {
+    &:hover {
+      transform: translateX(10px);
+    }
   }
 `
 
@@ -147,7 +149,7 @@ export const BookBannerBody = styled.div`
       }
 
       &:nth-child(3) {
-        top: -5px;
+        top: -6px;
         right: 84px;
         width: 18px;
         height: 18px;
