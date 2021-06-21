@@ -10,7 +10,7 @@ export const SearchWrapper = styled.section`
   z-index: 1400;
 
   .container {
-    height: 100%;
+    height: -webkit-fill-available;
   }
 `
 
