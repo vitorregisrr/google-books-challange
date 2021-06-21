@@ -69,6 +69,10 @@ export const SearchContentWrapper = styled.div`
   transform: translate(-50%, -50%);
   z-index: 1000;
 
+  @supports (height: -webkit-fill-available) {
+    height: -webkit-fill-available;
+  }
+
   @media screen and (min-width: 778px) {
     padding-top: 136px;
   }
