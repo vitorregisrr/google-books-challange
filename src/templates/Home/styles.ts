@@ -12,6 +12,10 @@ export const HomeWrapper = styled.main`
   @media screen and (min-width: 768px) {
     padding-bottom: 110px;
   }
+
+  @supports (-webkit-touch-callout: none) {
+    padding-bottom: 180px;
+  }
 `
 
 export const HomeTitle = styled.h1`

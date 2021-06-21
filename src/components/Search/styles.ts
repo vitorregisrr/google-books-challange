@@ -70,7 +70,7 @@ export const SearchContentWrapper = styled.div`
   z-index: 1000;
 
   @supports (-webkit-touch-callout: none) {
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
 
   @media screen and (min-width: 778px) {
@@ -152,7 +152,7 @@ export const LoadMoreWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 100px;
