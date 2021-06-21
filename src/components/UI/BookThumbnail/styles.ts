@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const BookThumbnailWrapper = styled.div`
+export const BookThumbnailWrapper = styled.article`
   font-size: 1.5rem;
   color: rgba(49, 49, 49, 0.8);
   display: flex;
@@ -26,8 +26,8 @@ export const BookThumbnailImg = styled.img`
   object-position: center center;
   box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.03);
 
-  @media screen and (min-width: 768px) {
-    height: 250px;
+  @media screen and (min-width: 555px) {
+    height: 200px;
   }
 `
 

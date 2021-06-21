@@ -12,10 +12,10 @@ export const scale = {
 
 export const circle = {
   style: { width: '100%', height: '100vh' },
-  transition: { duration: 0.7, ease: 'linear' },
+  transition: { duration: 0.7, ease: 'easeIn' },
   initial: {
     backgroundColor: '#FF6978',
-    opacity: 0.8,
+    opacity: 0.3,
     clipPath: 'circle(0% at 50% 8%)'
   },
   animate: {
@@ -25,7 +25,7 @@ export const circle = {
   },
   exit: {
     backgroundColor: '#FF6978',
-    opacity: 0.8,
+    opacity: 0.1,
     clipPath: 'circle(0% at 50% 8%)'
   }
 }

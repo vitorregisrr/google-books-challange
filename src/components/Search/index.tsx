@@ -12,19 +12,24 @@ import { Plus as PlusIcon } from '@styled-icons/heroicons-outline'
 import * as S from './styles'
 import * as animations from './animations'
 
+type PaginationProps = {
+  start: number
+  max: number
+  totalItems: number
+}
+
 const Search = () => {
-  const [isContentVisible, setIsContentVisible] = useState(false)
-  const [isFetching, setIsFetching] = useState(false)
-  const [searchValue, setSearchValue] = useState('')
-  const [currBooks, setCurrBooks] = useState([])
+  const [isContentVisible, setIsContentVisible] = useState<boolean>(false)
+  const [isFetching, setIsFetching] = useState<boolean>(false)
+  const [searchValue, setSearchValue] = useState<string>('')
+  const [currBooks, setCurrBooks] = useState<GoogleBook[]>([])
   const controllerRef = useRef<AbortController | null>()
-  const [pagination, setPagination] = useState({
+  const [pagination, setPagination] = useState<PaginationProps>({
     start: 0,
     max: 9,
     totalItems: 0
   })
 
-  // Close handling function
   const onCloseHandler = async () => {
     setPagination({
       start: 0,
@@ -32,11 +37,10 @@ const Search = () => {
       totalItems: 0
     })
     setSearchValue('')
-    setIsContentVisible(false)
     setCurrBooks([])
+    setIsContentVisible(false)
   }
 
-  // called on search input onChange
   const inputChangeHandler = (e) => {
     setSearchValue(e.target.value)
   }
@@ -67,12 +71,10 @@ const Search = () => {
         return { ...old, totalItems: totalItems }
       })
     } catch (e) {
-      // turn it if abborted or had some error
       console.log(e)
     }
   }
 
-  // called on load more button onClick
   const loadMore = async () => {
     if (!isFetching) {
       setIsFetching(true)
@@ -90,7 +92,6 @@ const Search = () => {
     }
   }
 
-  // called on every input change
   useEffect(() => {
     if (searchValue !== '') {
       searchBooks()
@@ -113,7 +114,7 @@ const Search = () => {
     pagination.start < pagination.totalItems - (pagination.max + 1)
 
   return (
-    <>
+    <S.SearchWrapper>
       <Container>
         <S.SearchInputWrapper isFixed={isContentVisible}>
           <S.SearchInput
@@ -122,7 +123,7 @@ const Search = () => {
             onClick={() => !isContentVisible && setIsContentVisible(true)}
             onChange={(e) => inputChangeHandler(e)}
           />
-          {/* Close button animation -> only visible if isContentVisible */}
+
           <AnimatePresence>
             {isContentVisible && (
               <motion.div {...animations.fade}>
@@ -134,7 +135,6 @@ const Search = () => {
           </AnimatePresence>
         </S.SearchInputWrapper>
       </Container>
-      {/* SearchContent animation -> only visible if isContentVisible */}
       <AnimatePresence>
         {isContentVisible && (
           <motion.div {...animations.circle}>
@@ -148,7 +148,6 @@ const Search = () => {
                   }}
                 >
                   <S.SearchContentBody>
-                    {/* Books rendering */}
                     {currBooks && currBooks.length > 0 ? (
                       <>
                         {currBooks.map((book: GoogleBook) => (
@@ -174,13 +173,11 @@ const Search = () => {
                     )}
                   </S.SearchContentBody>
                   <S.LoadMoreWrapper>
-                    {/* Render LoadMoreButton if there is more items to be displayed */}
                     {isLoadMoreBtnVisible() && (
                       <S.LoadMoreButton onClick={loadMore}>
-                        <PlusIcon />
+                        {`Load more`} <PlusIcon />
                       </S.LoadMoreButton>
                     )}
-                    {/* Render pagination count if there is items to be displayed */}
                     {pagination.totalItems > 0 && (
                       <S.LoadMoreCount>
                         Items:{' '}
@@ -196,7 +193,7 @@ const Search = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </S.SearchWrapper>
   )
 }
 

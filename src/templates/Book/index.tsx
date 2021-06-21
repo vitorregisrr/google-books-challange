@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion'
 import { useRouter } from 'next/dist/client/router'
+import { GoogleBook } from 'types/GoogleBook'
+import * as animations from './animations'
 
-// @ts-ignore
-import { BookType } from 'types/GoogleBook'
+import * as S from './styles'
 
 export type BookTemplateProps = {
-  book: BookType
+  book: GoogleBook
 }
 
 export default function BooksTemplate({ book }: BookTemplateProps) {
@@ -16,15 +18,17 @@ export default function BooksTemplate({ book }: BookTemplateProps) {
   console.log(book)
 
   return (
-    <>
-      <img
-        src={
-          book.volumeInfo.imageLinks
-            ? book.volumeInfo.imageLinks.thumbnail
-            : '/img/book-thumbnail.png'
-        }
-      />
-      {book.volumeInfo.title}
-    </>
+    <motion.div {...animations.fade}>
+      <S.BookTemplateWrapper>
+        <img
+          src={
+            book.volumeInfo.imageLinks
+              ? book.volumeInfo.imageLinks.thumbnail
+              : '/img/book-thumbnail.png'
+          }
+        />
+        {book.volumeInfo.title}
+      </S.BookTemplateWrapper>
+    </motion.div>
   )
 }

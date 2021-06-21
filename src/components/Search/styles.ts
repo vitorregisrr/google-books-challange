@@ -4,6 +4,16 @@ type SearchInputWrapperProps = {
   isFixed: boolean
 }
 
+export const SearchWrapper = styled.section`
+  position: absolute;
+  width: 100vw;
+  z-index: 1400;
+
+  .container {
+    height: 100%;
+  }
+`
+
 export const SearchInputWrapper = styled.div`
   position: ${(props: SearchInputWrapperProps) =>
     props.isFixed ? 'fixed' : 'absolute'};
@@ -28,6 +38,7 @@ export const SearchInputWrapper = styled.div`
 
 export const SearchInput = styled.input`
   font-family: 'SF Display Text', sans-serif;
+  font-size: 16px;
   font-weight: bold;
   width: 100%;
   height: 48px;
@@ -35,7 +46,7 @@ export const SearchInput = styled.input`
   border: none;
   border-radius: 10px;
   padding: 1.4px 10px 0 50px;
-  font-size: 16px;
+  box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
 
   &:focus,
   &:active {
@@ -76,7 +87,7 @@ export const SearchContentWrapper = styled.div`
 
       .simplebar-scrollbar {
         &::before {
-          height: 90%;
+          height: 94%;
           background-color: var(--dark--1);
         }
       }
@@ -100,11 +111,12 @@ export const SearchContentBody = styled.div`
     padding-top: 15px;
   }
 
-  & > div {
+  & > div,
+  article {
     width: 29.9%;
 
-    @media screen and (min-width: 768px) {
-      width: 22.8%;
+    @media screen and (min-width: 555px) {
+      width: 18.8%;
     }
   }
 `
@@ -149,9 +161,9 @@ export const LoadMoreCount = styled.span`
 export const LoadMoreButton = styled.button`
   color: #fff;
   background-color: var(--highlight);
-  padding: 10px;
+  padding: 6px 15px;
   margin-bottom: 12px;
-  border-radius: 50%;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
