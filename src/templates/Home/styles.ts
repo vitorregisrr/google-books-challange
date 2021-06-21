@@ -4,10 +4,14 @@ export const HomeWrapper = styled.main`
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow-y: auto;
+  overflow-x: hidden;
   background-color: var(--background);
   padding-top: 130px;
-  padding-bottom: 120px;
+  padding-bottom: 190px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
 `
 
 export const HomeTitle = styled.h1`

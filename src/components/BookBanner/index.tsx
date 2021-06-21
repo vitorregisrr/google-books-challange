@@ -31,6 +31,13 @@ const BookBanner = ({ id }: BookBannerProps) => {
           <motion.div {...animations.wrapper}>
             <S.BookBannerContent>
               <S.BookBannerBody>
+                <div className="bg-shapes">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
                 <div className="img-wrapper">
                   {currBook && (
                     <motion.div {...animations.img}>

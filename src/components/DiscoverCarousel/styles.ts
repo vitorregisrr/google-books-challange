@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const DiscoverCarouselWrapper = styled.section`
+  width: 100%;
   position: relative;
   z-index: 4;
 

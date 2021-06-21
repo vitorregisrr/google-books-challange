@@ -148,7 +148,11 @@ export const LoadMoreWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-  padding-bottom: 90px;
+  padding-bottom: 180px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
 `
 
 export const LoadMoreCount = styled.span`

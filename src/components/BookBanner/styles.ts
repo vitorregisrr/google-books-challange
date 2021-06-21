@@ -3,10 +3,11 @@ import styled from 'styled-components'
 export const BookBannerWrapper = styled.article``
 
 export const BookBannerContent = styled.div`
+  position: relative;
   margin-top: 40px;
   margin-bottom: 50px;
-  transition: transform 0.3s;
   cursor: pointer;
+  transition: transform 0.3s;
 
   &:hover {
     transform: translateX(10px);
@@ -40,6 +41,7 @@ export const BookBannerBody = styled.div`
     width: 91px;
     height: 136px;
     filter: drop-shadow(5px 7px 32px rgba(140, 170, 58, 0.04));
+    z-index: 2;
 
     img {
       width: 100%;
@@ -53,6 +55,7 @@ export const BookBannerBody = styled.div`
 
   .caption {
     padding-left: 12px;
+    z-index: 2;
 
     .title {
       font-family: 'Playfair Display', serif;
@@ -60,7 +63,7 @@ export const BookBannerBody = styled.div`
       line-height: 27px;
       letter-spacing: 2px;
       margin-bottom: 4px;
-      margin-top: 6px;
+      margin-top: 8px;
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -78,7 +81,7 @@ export const BookBannerBody = styled.div`
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      margin-bottom: 24px;
+      margin-bottom: 23px;
     }
 
     .stats {
@@ -105,6 +108,70 @@ export const BookBannerBody = styled.div`
         height: 16px;
         background-image: url('/img/ico/book-small.svg');
         margin-right: 3px;
+      }
+    }
+  }
+
+  .bg-shapes {
+    @keyframes zoomIn {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    span {
+      position: absolute;
+      z-index: 1;
+      background-size: 100% 100%;
+      animation: zoomIn 0.8s;
+      animation-delay: 0.7s;
+      animation-fill-mode: forwards;
+      transform: scale(0);
+
+      &:nth-child(1) {
+        top: 0;
+        left: -40px;
+        width: 80px;
+        height: 80px;
+        background-image: url('/img/ico/oval-3.svg');
+      }
+
+      &:nth-child(2) {
+        bottom: 0;
+        right: 0px;
+        width: 70px;
+        height: 70px;
+        background-image: url('/img/ico/oval-6.png');
+      }
+
+      &:nth-child(3) {
+        top: -5px;
+        right: 84px;
+        width: 18px;
+        height: 18px;
+        background-image: url('/img/ico/oval-5.png');
+      }
+
+      &:nth-child(4) {
+        top: -27px;
+        right: -25px;
+        width: 69px;
+        height: 69px;
+        background-image: url('/img/ico/oval-4.png');
+        animation-delay: 1s;
+      }
+      &:nth-child(5) {
+        bottom: 0px;
+        right: -28px;
+        width: 56px;
+        height: 56px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url('/img/ico/shape-rectangle-2.png');
+        animation-delay: 1s;
       }
     }
   }
