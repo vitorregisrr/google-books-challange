@@ -10,7 +10,7 @@ export const SearchWrapper = styled.section`
   z-index: 1400;
 
   .container {
-    height: -webkit-fill-available;
+    height: 100%;
   }
 `
 
@@ -148,7 +148,7 @@ export const LoadMoreWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 90px;
 `
 
 export const LoadMoreCount = styled.span`
