@@ -45,7 +45,7 @@ export const SearchInput = styled.input`
   color: var(--dark--2);
   border: none;
   border-radius: 10px;
-  padding: 1.4px 10px 0 50px;
+  padding: 1.4px 10px 0 46px;
   box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
 
   &:focus,

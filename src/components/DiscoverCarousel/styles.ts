@@ -172,6 +172,7 @@ export const DiscoverCarouselItem = styled.article`
       &.shape-3 {
         left: -34px;
         bottom: -90px;
+        z-index: 15;
       }
     }
   }

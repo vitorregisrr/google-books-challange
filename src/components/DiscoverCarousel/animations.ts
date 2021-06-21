@@ -32,10 +32,10 @@ export const shape2 = {
 }
 
 export const shape3 = {
-  transition: { delay: 0.2, duration: 1 },
-  initial: { opacity: 0, rotate: '90deg' },
+  transition: { delay: 0.2, duration: 0.7 },
+  initial: { opacity: 0, rotate: '40deg' },
   animate: { opacity: 1, rotate: 0 },
-  exit: { opacity: 0, rotate: '90deg' }
+  exit: { opacity: 0, rotate: '40deg' }
 }
 
 export const circle = {
