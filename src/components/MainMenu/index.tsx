@@ -31,8 +31,8 @@ const MainMenu = () => {
   return (
     <S.MainMenuWrapper>
       <S.MainMenuContent>
-        {menuItems.map((item) => (
-          <Link href={item.href} key={item.href}>
+        {menuItems.map((item, index) => (
+          <Link href={item.href} key={index}>
             <S.MainMenuItem isActive={item.isActive || false}>
               <img src={item.ico} alt="Home" className="ico" />
               <span className="label">{item.label}</span>
