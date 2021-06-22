@@ -1,5 +1,5 @@
 
-![React Avançado](https://https://github.com/vitorregisrr/google-books-challange/blob/main/public/img/icon-512.png?raw=true)
+![React Avançado](https://raw.githubusercontent.com/vitorregisrr/google-books-challange/main/public/img/icon-512.png)
 
 This is a [Fotton Challange](https://github.com/FotonTech/frontend-challenge) for a Front-end Developer hiring proccess.
 
