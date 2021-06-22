@@ -22,6 +22,7 @@ export const HomeTitle = styled.h1`
   font-size: 2.4rem;
   font-weight: 400;
   color: var(--dark-1);
+  margin-bottom: -5.4px;
 
   .highlight {
     color: var(--highlight);

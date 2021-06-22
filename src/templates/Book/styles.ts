@@ -161,6 +161,6 @@ export const BookTemplateBody = styled.div`
     font-weight: 500;
     letter-spacing: 0.670588px;
     color: #ff6978;
-    margin: 10px 0;
+    margin: 10px 0 8px 0;
   }
 `

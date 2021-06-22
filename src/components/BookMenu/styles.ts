@@ -17,7 +17,7 @@ export const BookMenuContent = styled.ul`
   height: 100%;
   margin: 0 auto;
   background-color: #fff;
-  height: 59px;
+  height: 56px;
   width: 100%;
   z-index: 1500;
   box-shadow: 3px 3px 23px rgba(107, 103, 70, 0.125901);
