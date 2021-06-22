@@ -87,18 +87,21 @@ const DiscoverCarousel = ({ books }: DiscoverCarouselProps) => {
                           {/*the shapes are in the html for use animations*/}
                           <motion.div {...animations.shape1}>
                             <img
+                              alt="Triangle background shape"
                               src="/img/ico/shape-triangle.svg"
                               className="shape shape-1"
                             />
                           </motion.div>
                           <motion.div {...animations.shape2}>
                             <img
+                              alt="Circle background shape"
                               src="/img/ico/shape-circle.svg"
                               className="shape shape-2"
                             />
                           </motion.div>
                           <motion.div {...animations.shape3}>
                             <img
+                              alt="Rectangle background shape"
                               src="/img/ico/shape-retangle.svg"
                               className="shape shape-3"
                             />

@@ -18,10 +18,6 @@ function App({ Component, pageProps, router }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#F2F2F2" />
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta
           name="description"
           content="A app challange with Google Maps for Foton hiring proccess test 
           as Front-end Developer"
