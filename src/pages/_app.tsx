@@ -8,8 +8,7 @@ import GlobalStyles from 'styles/global'
 import FontFaces from 'styles/fonts'
 import { UserProvider } from 'contexts/user'
 import { AnimatePresence } from 'framer-motion'
-
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Head>
@@ -50,8 +49,8 @@ function App({ Component, pageProps }: AppProps) {
       <FontFaces />
       <GlobalStyles />
       <UserProvider>
-        <AnimatePresence>
-          <Component {...pageProps} />
+        <AnimatePresence exitBeforeEnter>
+          <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </UserProvider>
     </>

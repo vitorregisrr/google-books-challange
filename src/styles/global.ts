@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
       --background: #fefaf6;
       --highlight: #FF6978;
       --highlight--darken: #e55765;
-      --beige: #FFF6E5;
+      --beige: #fff6e5;
       --white: #eeeeee;
       --dark--1: #54565A;
       --dark--2: #000000;
@@ -81,6 +81,21 @@ const GlobalStyles = createGlobalStyle`
       margin: 0 auto;
     }
   }
+
+  
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+
+	50% {
+		transform: translatey(-3px);
+	}
+
+	100% {
+		transform: translatey(0px);
+	}
+}
 
 `
 

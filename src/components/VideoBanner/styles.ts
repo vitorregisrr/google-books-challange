@@ -8,8 +8,8 @@ export const VideoBannerPreview = styled.div`
   cursor: pointer;
   width: 100%;
   height: 48vw;
-  max-width: 500px;
-  max-height: 250px;
+  max-width: 410px;
+  max-height: 210px;
   border-radius: 10px;
   overflow: hidden;
 

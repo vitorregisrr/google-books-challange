@@ -5,6 +5,7 @@ export type GoogleBook = {
   selfLink: string
   volumeInfo: {
     title: string
+    subtitle: string
     imageLinks?: any
     authors: string[]
     publishedDate: string
