@@ -8,7 +8,7 @@ export const BookTemplateWrapper = styled.main`
   padding-bottom: 140px;
 
   @supports (-webkit-touch-callout: none) {
-    padding-bottom: 210px;
+    padding-bottom: 230px;
   }
 `
 
