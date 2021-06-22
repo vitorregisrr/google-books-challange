@@ -16,6 +16,23 @@ function App({ Component, pageProps, router }: AppProps) {
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
+        <meta
+          name="application-name"
+          content="Google Books • Foton Challange"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Google Books • Foton Challange"
+        />
+        <meta
+          name="description"
+          content="A app challange with Google Maps for Foton hiring proccess test 
+          as Front-end Developer"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#F2F2F2" />
         <meta
           name="description"
