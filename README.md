@@ -9,6 +9,8 @@ Main technologies used:
 - Vanilla Fetch for services
 - Eslint, Prettier, Husky, Jest (tests not writed yet) for project testing and organization
 
+* For the project work locally in your machine, you need to set the Google Books API KEY in .env_example and rename it to .env.local
+
 
 You can see more about this ocuppation, Foton and their culture [in this page](https://www.notion.so/Como-ser-um-NOIA-c80e0120f5034234a9bb1bd36a3747bc)
 
