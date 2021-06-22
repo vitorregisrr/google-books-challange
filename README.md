@@ -1,7 +1,11 @@
-
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
-
 This is a [Fotton Challange](https://github.com/FotonTech/frontend-challenge) for a Front-end Developer hiring proccess.
+
+Main technologies used: 
+- Typescript, React, Next, PWA as main technologies of the app
+- Framer Motion for animations
+- Vanilla Fetch for services
+- Eslint, Prettier, Husky, Jest (tests not writed yet) for project testing and organization
+
 
 You can see more about this ocuppation, Foton and their culture [in this page](https://www.notion.so/Como-ser-um-NOIA-c80e0120f5034234a9bb1bd36a3747bc)
 
