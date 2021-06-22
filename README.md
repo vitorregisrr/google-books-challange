@@ -4,7 +4,7 @@
 This is a [Fotton Challange](https://github.com/FotonTech/frontend-challenge) for a Front-end Developer hiring proccess.
 
 Main technologies used: 
-- Typescript, React, Next, PWA as main technologies of the app
+- Typescript, React, Next, PWA and Styled Components as main technologies of the app
 - Framer Motion for animations
 - Vanilla Fetch for services
 - Eslint, Prettier, Husky, Jest (tests not writed yet) for project testing and organization
