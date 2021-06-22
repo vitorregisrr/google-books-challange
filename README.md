@@ -1,3 +1,6 @@
+
+![React Avançado](https://https://github.com/vitorregisrr/google-books-challange/blob/main/public/img/icon-512.png?raw=true)
+
 This is a [Fotton Challange](https://github.com/FotonTech/frontend-challenge) for a Front-end Developer hiring proccess.
 
 Main technologies used: 
@@ -9,7 +12,7 @@ Main technologies used:
 
 You can see more about this ocuppation, Foton and their culture [in this page](https://www.notion.so/Como-ser-um-NOIA-c80e0120f5034234a9bb1bd36a3747bc)
 
-Above here, you can see the challange description.
+Above here, you can see the challange description:
 
 # Frontend Challenge
 
