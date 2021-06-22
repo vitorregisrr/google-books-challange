@@ -4,7 +4,7 @@ export const BookBannerWrapper = styled.article``
 
 export const BookBannerContent = styled.div`
   position: relative;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-bottom: 46px;
   cursor: pointer;
   transition: transform 0.3s;
