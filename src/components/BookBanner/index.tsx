@@ -27,7 +27,7 @@ const BookBanner = ({ id }: BookBannerProps) => {
   return (
     <S.BookBannerWrapper>
       <Container>
-        <Link href={currBook ? `book/${currBook.id}` : '/'}>
+        <Link href={currBook ? `book/${currBook && currBook.id}` : '/'}>
           <motion.div {...animations.wrapper}>
             <S.BookBannerContent>
               <S.BookBannerBody>
