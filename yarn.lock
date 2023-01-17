@@ -6583,7 +6583,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@15.7.2, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -7165,15 +7165,22 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.3.tgz"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simplebar-react@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/simplebar-react/-/simplebar-react-2.3.3.tgz"
-  integrity sha512-hfyRz3MVSAoyZfTB2zZcpzVtz+BQ7mMBVN+BNMgaAKujKyIrBQ69xIcwrZpBRWRqPd4WHmM0x6DMQpRGPJa7MQ==
+simplebar-core@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/simplebar-core/-/simplebar-core-1.1.0.tgz#14917e2ebce928f10dc2c454410ad84bee3e970f"
+  integrity sha512-NHT0yN3cBoauingv6zsDPPZjdlhW2MeppLM8hfZh2cvVHBTSO2GgU757TrZE89iSJOqlYkgFql9DK8MSc9eTeg==
   dependencies:
-    prop-types "^15.6.1"
-    simplebar "^5.3.3"
+    can-use-dom "^0.1.0"
+    lodash "^4.17.21"
 
-simplebar@*, simplebar@^5.3.3:
+simplebar-react@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/simplebar-react/-/simplebar-react-3.1.0.tgz#938daee627a7a74177e7e75980f4299f79814644"
+  integrity sha512-HAVQnCu1eG1t4kgWLBGaAuUSE2m0sJAVmU7HrJlQiZVjiPVLyhc94aBfaTIzoWjSPj+TLatrn6ziHkYO10tZXA==
+  dependencies:
+    simplebar-core "^1.1.0"
+
+simplebar@*:
   version "5.3.3"
   resolved "https://registry.npmjs.org/simplebar/-/simplebar-5.3.3.tgz"
   integrity sha512-OfuSX47Axq9aR6rp9WK3YefAg+1Qw3UKKxS46PdElPpd+FWXMj17/nispYxsHtU3F7mv+ilmqELWmRt7KUgHgg==
